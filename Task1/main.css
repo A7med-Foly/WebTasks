@@ -3,28 +3,35 @@ body {
   font-size: 1.1rem;
   line-height: 1.6;
 }
+
 h1 {
   text-align: center;
 }
+
 h1,
 h2,
 h3 {
   font-family: "Playfair Display", serif;
   margin-top: 0;
 }
+
 .split {
   display: flex;
   margin: 2rem 2rem;
+
   .margin-right {
     margin-right: 2rem;
   }
+
   .margin-left {
     margin-left: 2rem;
   }
 }
+
 img {
   max-width: 100%;
 }
+
 a {
   font-weight: bold;
   color: #c33c54;
