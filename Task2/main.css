@@ -1,7 +1,8 @@
+/* global style */
 body {
   font-family: "Roboto", sans-serif;
-  font-size: 1.1rem;
   line-height: 1.6;
+  font-size: 1.2rem;
 }
 
 h1 {
@@ -15,6 +16,16 @@ h3 {
   margin-top: 0;
 }
 
+img {
+  max-width: 100%;
+}
+
+a {
+  font-weight: bold;
+  color: #c33c54;
+}
+
+/* end global style */
 .split {
   display: flex;
   margin: 2rem 2rem;
@@ -28,11 +39,30 @@ h3 {
   }
 }
 
-img {
-  max-width: 100%;
+/* animation insteed of marquee*/
+.scrolling-text {
+  width: fit-content;
+  animation: scroll 10s linear infinite ;
+  background-color: rgba(245, 192, 124, 0.3);
+  overflow: hidden;
 }
 
-a {
+@keyframes scroll {
+  0% {
+    transform: translateX(120%);
+  }
+  100% {
+    transform: translateX(-1%);
+  }
+}
+.scroll-hidden{overflow: hidden;}
+/* end animation */
+
+.bold {
   font-weight: bold;
-  color: #c33c54;
+  /* color: #c33c54; */
+}
+.flex-center{
+  display: flex;
+  justify-content: center;
 }
